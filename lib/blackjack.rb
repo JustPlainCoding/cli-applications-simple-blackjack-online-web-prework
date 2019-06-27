@@ -32,7 +32,10 @@ end
 
 def hit?(hand)
   prompt_user
-  get_user_input
+  if get_user_input == 'h'
+    new_card = deal_card
+    return hand + new_card
+  end
 end
 
 def invalid_command

@@ -35,6 +35,8 @@ def hit?(hand)
   if get_user_input == 'h'
     new_card = deal_card
     return hand + new_card
+  else 
+    return hand
   end
 end
 

@@ -35,8 +35,10 @@ def hit?(hand)
   if get_user_input == 'h'
     new_card = deal_card
     return hand + new_card
-  else 
+  elsif get_user_input = 's'
     return hand
+  else 
+    return invalid_command
   end
 end
 
@@ -49,6 +51,8 @@ end
 #####################################################
 
 def runner
-  
+  welcome
+  starting _hand = initial_round
+  hit?
 end
     

@@ -30,7 +30,7 @@ def initial_round
   hand
 end
 
-def hit?
+def hit?(hand)
   prompt_user
   get_user_input
 end
